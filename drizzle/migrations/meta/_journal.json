@@ -15,6 +15,13 @@
       "when": 1789756742458,
       "tag": "0001_create_chat_threads_and_messages",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1789758100630,
+      "tag": "0002_create_generated_images",
+      "breakpoints": true
     }
   ]
 }
