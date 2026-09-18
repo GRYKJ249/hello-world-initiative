@@ -3,7 +3,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { Check, Copy } from "lucide-react";
 
-function CodeBlock({ code, lang }: { code: string; lang?: string }) {
+function CodeBlock({ code, lang }: { code: string; lang?: string | undefined }) {
   const [copied, setCopied] = useState(false);
 
   const copy = async () => {
