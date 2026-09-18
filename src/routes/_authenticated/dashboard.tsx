@@ -155,13 +155,13 @@ function Dashboard() {
             <p className="mt-3 text-3xl font-bold">{profile?.tokens_used ?? 0}</p>
             <p className="text-sm text-muted-foreground">{t("AI tokens used", "الرصيد المستخدم للذكاء الاصطناعي")}</p>
           </div>
-          <div className="glass rounded-2xl p-6">
+          <Link to="/chat" className="glass rounded-2xl p-6 transition hover:border-primary/50">
             <Sparkles className="h-5 w-5 text-primary" />
-            <p className="mt-3 font-semibold">{t("Workspaces coming next", "المساحات القادمة")}</p>
+            <p className="mt-3 font-semibold">{t("Chat workspace", "مساحة المحادثة")}</p>
             <p className="text-sm text-muted-foreground">
-              {t("Chat workspace, cloud IDE and image studio plug in here.", "مساحة المحادثة وبيئة البرمجة واستوديو الصور ستُضاف هنا.")}
+              {t("Talk to Opera AI with streaming answers and saved conversations.", "تحدّث مع أوبرا الذكي بردود فورية ومحادثات محفوظة.")}
             </p>
-          </div>
+          </Link>
         </div>
       </div>
     </div>
